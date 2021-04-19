@@ -1,17 +1,20 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 
 public class Player : MonoBehaviour
 {
     private Vector3 mousePos;
-
+  
     public NavMeshAgent agent;
     private  Vector3 mouseCameraPos;
 
     public Camera cam;
+
+  
 
     void Update()
     {
