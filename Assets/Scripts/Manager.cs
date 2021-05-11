@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
+    public data DataSet; 
     public bool _con0 = false;
     public bool con0{
         get
@@ -45,5 +46,9 @@ public class Manager : MonoBehaviour
         if(_con0 == true && _con1 == true && _con2 == true) {
             Debug.Log("Player Won");
         }
+    }
+
+    void Start() {
+        Debug.Log(DataSet._basket);
     }
 }
