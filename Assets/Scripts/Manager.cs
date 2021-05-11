@@ -1,19 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
     public data DataSet; 
-    public bool _con0 = false;
-    public bool con0{
+    public Text TaskBarTxt; 
+
+
+    // Untersuchen
+    public bool _basket = false;
+    public bool basket{
         get
         {
-            return _con0;
+            return _basket;
         } 
         set
         {
-            _con0 = value; 
+            _basket = value; 
+            DataSet.basket = value;
             Checkcon();
         }
     }
@@ -42,13 +48,32 @@ public class Manager : MonoBehaviour
         }
     }
 
-    void Checkcon() {
-        if(_con0 == true && _con1 == true && _con2 == true) {
-            Debug.Log("Player Won");
+    // Keys
+
+    public bool _key_Arbeitszimmer = false;
+    public bool key_Arbeitszimmer{
+        get
+        {
+            return _key_Arbeitszimmer;
+        } 
+        set
+        {
+            _key_Arbeitszimmer = value; 
+            Checkcon();
         }
     }
 
+    void Checkcon() {
+        // if(_con0 == true && _con1 == true && _con2 == true) {
+            // Debug.Log("Player Won");
+        // }
+    }
+
     void Start() {
-        Debug.Log(DataSet._basket);
+        DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;
+    }
+
+    public void SetNotification(string notification) {
+        TaskBarTxt.text = notification;
     }
 }

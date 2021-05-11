@@ -7,8 +7,16 @@ public class SceneLoader : MonoBehaviour
 {
     public string newScene;
 
+    public data DataSet;
+
+    void Start() {
+        DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;    
+    }
     void OnMouseDown()
     {
+        if(newScene == "") {
+            
+        }
         SceneManager.LoadScene(newScene, LoadSceneMode.Single);    
     }
 }

@@ -120,6 +120,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &52599665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52599667}
+  - component: {fileID: 52599666}
+  m_Layer: 0
+  m_Name: DataSet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &52599666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52599665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b142774d8a54c9c4cb3985d485d0b05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DataSet: {fileID: 11400000, guid: 66a19805375401646903c9d4692006c5, type: 2}
+--- !u!4 &52599667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52599665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4987147, y: -0.24215735, z: 0.90244067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297576276
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &600089195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -631,7 +675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &614624734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -762,7 +806,7 @@ GameObject:
   - component: {fileID: 651113863}
   - component: {fileID: 651113864}
   m_Layer: 0
-  m_Name: basket
+  m_Name: Spielzeugkorb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,8 +932,8 @@ MonoBehaviour:
   clicked:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 600089194}
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1247539056}
+        m_MethodName: set_basket
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -897,18 +941,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 922393575}
-        m_MethodName: set_text
+      - m_Target: {fileID: 1247539056}
+        m_MethodName: SetNotification
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Hmmm Leider ist Sausia nicht im Korb
-          m_BoolArgument: 0
+          m_StringArgument: Sausia scheint nicht im Spielzeugkorb zu sein
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -1272,7 +1316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185016572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1019, y: -3.11642, z: -9.7712}
+  m_LocalPosition: {x: -2.1019, y: -3.15, z: -9.7712}
   m_LocalScale: {x: 0.626448, y: 0.626448, z: 0.626448}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1329,10 +1373,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc4d66f27cc1b64b945f81bd278c0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataSet: {fileID: 11400000, guid: 66a19805375401646903c9d4692006c5, type: 2}
-  _con0: 0
+  DataSet: {fileID: 0}
+  TaskBarTxt: {fileID: 922393575}
+  _basket: 0
   _con1: 0
   _con2: 0
+  _key_Arbeitszimmer: 0
 --- !u!4 &1247539057
 Transform:
   m_ObjectHideFlags: 0
@@ -1365,7 +1411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1430673004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1911,6 +1957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: Badezimmer
+  DataSet: {fileID: 0}
 --- !u!1 &2121772267
 GameObject:
   m_ObjectHideFlags: 0
