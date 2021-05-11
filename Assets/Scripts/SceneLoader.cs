@@ -9,14 +9,18 @@ public class SceneLoader : MonoBehaviour
 
     public data DataSet;
 
+    public Manager Manager;
+
     void Start() {
-        DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;    
+        DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;   
+        Manager = GameObject.Find("Manager").GetComponent<Manager>();  
     }
     void OnMouseDown()
     {
-        if(newScene == "") {
-            
+        if(newScene == "Arbeitszimmer" && DataSet.key_Arbeitszimmer == false) {
+            Manager.SetNotification("Du musst zuerst den Schlüssel für das Arbeitszimmer finden!");
+        } else {
+            SceneManager.LoadScene(newScene, LoadSceneMode.Single);    
         }
-        SceneManager.LoadScene(newScene, LoadSceneMode.Single);    
     }
 }

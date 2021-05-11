@@ -59,6 +59,7 @@ public class Manager : MonoBehaviour
         set
         {
             _key_Arbeitszimmer = value; 
+            DataSet.key_Arbeitszimmer = value;
             Checkcon();
         }
     }
@@ -71,6 +72,8 @@ public class Manager : MonoBehaviour
 
     void Start() {
         DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;
+        DataSet.key_Arbeitszimmer = false;
+        DataSet.key_Haustuere = false;
     }
 
     public void SetNotification(string notification) {

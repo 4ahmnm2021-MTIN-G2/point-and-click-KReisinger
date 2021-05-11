@@ -293,7 +293,6 @@ GameObject:
   - component: {fileID: 402596701}
   - component: {fileID: 402596700}
   - component: {fileID: 402596699}
-  - component: {fileID: 402596698}
   - component: {fileID: 402596697}
   m_Layer: 0
   m_Name: DoorR
@@ -330,34 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newScene: Badezimmer
   DataSet: {fileID: 0}
---- !u!114 &402596698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402596695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a3edac4794f2a4a9a4d97d5a03212f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 402596695}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  Manager: {fileID: 0}
 --- !u!65 &402596699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1339,7 +1311,6 @@ GameObject:
   - component: {fileID: 1831729148}
   - component: {fileID: 1831729147}
   - component: {fileID: 1831729146}
-  - component: {fileID: 1831729145}
   - component: {fileID: 1831729149}
   m_Layer: 0
   m_Name: DoorL
@@ -1362,34 +1333,6 @@ Transform:
   m_Father: {fileID: 389366794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1831729145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831729143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a3edac4794f2a4a9a4d97d5a03212f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1831729143}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1831729146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1460,8 +1403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad065c91fb7aef489214d3b959fceeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScene: Badezimmer
+  newScene: Arbeitszimmer
   DataSet: {fileID: 0}
+  Manager: {fileID: 0}
 --- !u!1 &2121772267
 GameObject:
   m_ObjectHideFlags: 0
