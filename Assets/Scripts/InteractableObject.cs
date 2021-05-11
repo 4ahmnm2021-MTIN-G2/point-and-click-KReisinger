@@ -13,7 +13,7 @@ public class InteractableObject : MonoBehaviour
     { 
            clicked.Invoke();    
         GameObject.Find("ObjectName").GetComponent<Text>().text = this.gameObject.name;
-        Debug.Log("click");
+        // Debug.Log("click");
     }
 
 
