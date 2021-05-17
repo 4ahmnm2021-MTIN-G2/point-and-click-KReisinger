@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9aff6d5308c7864e8e3780f02420fd9, type: 3}
   m_Name: DataSet
   m_EditorClassIdentifier: 
-  basket: 1
+  basket: 0
   tub: 0
   sofa: 0
   tv: 0

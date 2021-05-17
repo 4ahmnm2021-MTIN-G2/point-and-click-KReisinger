@@ -8,6 +8,8 @@ public class Manager : MonoBehaviour
     public data DataSet; 
     public Text TaskBarTxt; 
 
+    public GameObject Menu;
+
 
     // Untersuchen
     public bool _basket = false;
