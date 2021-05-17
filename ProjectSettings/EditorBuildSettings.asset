@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arbeitszimmer.unity
     guid: 9190a42ad244e9c4892b76260fa01f77
+  - enabled: 1
+    path: "Assets/Scenes/K\xFCcheLeft.unity"
+    guid: 432777227fd5fd047b2f533a42c4e5d0
   m_configObjects: {}

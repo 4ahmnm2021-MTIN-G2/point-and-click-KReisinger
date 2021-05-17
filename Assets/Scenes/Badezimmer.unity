@@ -120,18 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &22270196 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 163271534, guid: 7a37e815283a3414ba21d736cfcdc8fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 5604923111644775763}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2c157325bd1a04f98dd12c5a6ea593, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &178099409 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5604923110723444404, guid: 7a37e815283a3414ba21d736cfcdc8fb,
@@ -313,7 +301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &402596696
 Transform:
   m_ObjectHideFlags: 0
@@ -1396,7 +1384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1831729144
 Transform:
   m_ObjectHideFlags: 0
@@ -1631,11 +1619,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5604923110723444404, guid: 7a37e815283a3414ba21d736cfcdc8fb,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5604923112440676801, guid: 7a37e815283a3414ba21d736cfcdc8fb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1746,29 +1729,13 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 297576278}
-    - target: {fileID: 672564989, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+    - target: {fileID: 337846394, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
+      propertyPath: newScene
+      value: Fernsehzimmer
       objectReference: {fileID: 0}
-    - target: {fileID: 672564989, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 672564989, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 672564989, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 22270196}
-    - target: {fileID: 672564989, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Aufheben
-      objectReference: {fileID: 0}
-    - target: {fileID: 672564989, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 1699281070, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
+      propertyPath: newScene
+      value: Main
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
