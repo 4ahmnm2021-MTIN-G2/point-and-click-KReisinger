@@ -19,6 +19,8 @@ public class SceneLoader : MonoBehaviour
     {
         if(newScene == "Arbeitszimmer" && DataSet.key_Arbeitszimmer == false) {
             Manager.SetNotification("Du musst zuerst den Schlüssel für das Arbeitszimmer finden!");
+        } else if(newScene == "Draussen" && DataSet.key_Haustuere == false) {
+            Manager.SetNotification("Du muss zuerst den Schlüssel für die Haustüre finden!");
         } else {
             SceneManager.LoadScene(newScene, LoadSceneMode.Single);    
         }

@@ -6,6 +6,15 @@ public class Menu : MonoBehaviour
 {
     public GameObject Object;
 
+    public data DataSet;    
+
+    void Start() {
+        if(DataSet.key_Arbeitszimmer == true) {
+            this.gameObject.transform.GetChild(3).GetChild(0).GetChild(1).gameObject.SetActive(true);
+        }
+    }
+
+
 
     public void Ansehen() {
         Object.GetComponent<InteractableObject>().callEventLooked();

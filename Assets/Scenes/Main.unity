@@ -2203,5 +2203,10 @@ PrefabInstance:
       propertyPath: newScene
       value: Badezimmer
       objectReference: {fileID: 0}
+    - target: {fileID: 163271534, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}
+      propertyPath: DataSet
+      value: 
+      objectReference: {fileID: 11400000, guid: 66a19805375401646903c9d4692006c5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a37e815283a3414ba21d736cfcdc8fb, type: 3}

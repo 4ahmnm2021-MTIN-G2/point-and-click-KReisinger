@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Object: {fileID: 0}
+  DataSet: {fileID: 11400000, guid: 66a19805375401646903c9d4692006c5, type: 2}
 --- !u!61 &163271535
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   tub: 0
   sofa: 0
   tv: 0
-  peppa: 0
+  peppa: 1
   cabinets: 0
   fridge: 0
   tree: 0

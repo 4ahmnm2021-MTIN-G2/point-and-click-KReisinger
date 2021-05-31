@@ -22,31 +22,34 @@ public class Manager : MonoBehaviour
         {
             _basket = value; 
             DataSet.basket = value;
-            Checkcon();
+            CheckStatus();
         }
     }
-    public bool _con1 = false;
-    public bool con1{
+    public bool _docSchrank = false;
+    public bool docSchrank{
         get
         {
-            return _con1;
+            return _docSchrank;
         } 
         set
         {
-            _con1 = value; 
-            Checkcon();
+          
+            _docSchrank = value; 
+            if(_tree == true) {
+            } 
+            CheckStatus();
         }
     }
-    public bool _con2 = false;
-    public bool con2{
+    public bool _tree = false;
+    public bool tree{
         get
         {
-            return _con2;
+            return _tree;
         } 
         set
         {
-            _con2 = value; 
-            Checkcon();
+            _tree = value; 
+            CheckStatus();
         }
     }
 
@@ -62,11 +65,25 @@ public class Manager : MonoBehaviour
         {
             _key_Arbeitszimmer = value; 
             DataSet.key_Arbeitszimmer = value;
-            Checkcon();
+            CheckStatus();
         }
     }
 
-    void Checkcon() {
+    public bool _key_Haustuere = false;
+    public bool key_Haustuere{
+        get
+        {
+            return _key_Haustuere;
+        } 
+        set
+        {
+            _key_Haustuere = value; 
+            DataSet.key_Haustuere  = value;
+            CheckStatus();
+        }
+    }
+    
+    void CheckStatus() {
         // if(_con0 == true && _con1 == true && _con2 == true) {
             // Debug.Log("Player Won");
         // }

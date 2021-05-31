@@ -13,6 +13,7 @@ public class data : ScriptableObject
     public bool cabinets = false;
     public bool fridge = false;
     public bool tree = false;
+
     
     [Header("Found Keys")]
 
