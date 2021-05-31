@@ -36,6 +36,9 @@ public class data : ScriptableObject
    [Header("Lock Alerts")]
     public string lock_arbeitszimmer = "Das Arbeitszimmer ist versperrt. Du musst den Schlüssel dafür finden";
     public string lock_kueche = "Die Haustüre ist zugesperrt";
+
+
+
     
 
 }

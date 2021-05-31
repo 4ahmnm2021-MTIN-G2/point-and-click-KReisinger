@@ -12,7 +12,7 @@ public class SceneLoader : MonoBehaviour
     public Manager Manager;
 
     void Start() {
-        DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;   
+        // DataSet = GameObject.Find("DataSet").GetComponent<SOAcces>().DataSet;   
         Manager = GameObject.Find("Manager").GetComponent<Manager>();  
     }
     void OnMouseDown()

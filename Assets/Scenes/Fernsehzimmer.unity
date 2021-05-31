@@ -278,6 +278,7 @@ Transform:
   - {fileID: 1164441016}
   - {fileID: 424470218}
   - {fileID: 882576783}
+  - {fileID: 692142686}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -522,8 +523,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424470213}
   m_LocalRotation: {x: 0.011820709, y: -0, z: -0, w: 0.9999302}
-  m_LocalPosition: {x: -0.47, y: 1.24, z: 0.64}
-  m_LocalScale: {x: 14.483252, y: 4.220031, z: 1.9482801}
+  m_LocalPosition: {x: -0.47, y: 1.24, z: 0.5}
+  m_LocalScale: {x: 14.483252, y: 4.220031, z: 3.509437}
   m_Children: []
   m_Father: {fileID: 398133621}
   m_RootOrder: 1
@@ -638,6 +639,114 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &692142685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692142686}
+  - component: {fileID: 692142690}
+  - component: {fileID: 692142689}
+  - component: {fileID: 692142688}
+  - component: {fileID: 692142687}
+  m_Layer: 0
+  m_Name: AgentObs_bed (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692142686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692142685}
+  m_LocalRotation: {x: 0.011820709, y: -0, z: -0, w: 0.9999302}
+  m_LocalPosition: {x: 5.39, y: 0.67, z: -1.07}
+  m_LocalScale: {x: 2.6453657, y: 4.220031, z: 4.766167}
+  m_Children: []
+  m_Father: {fileID: 398133621}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 1.355, y: 0, z: 0}
+--- !u!114 &692142687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692142685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!65 &692142688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692142685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &692142689
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692142685}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &692142690
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692142685}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &882576782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,9 +1156,10 @@ MonoBehaviour:
   TaskBarTxt: {fileID: 178099409}
   Menu: {fileID: 0}
   _basket: 0
-  _con1: 0
-  _con2: 0
+  _docSchrank: 0
+  _tree: 0
   _key_Arbeitszimmer: 0
+  _key_Haustuere: 0
 --- !u!4 &1247539057
 Transform:
   m_ObjectHideFlags: 0

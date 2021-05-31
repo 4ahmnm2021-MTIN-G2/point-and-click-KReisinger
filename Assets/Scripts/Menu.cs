@@ -12,6 +12,9 @@ public class Menu : MonoBehaviour
         if(DataSet.key_Arbeitszimmer == true) {
             this.gameObject.transform.GetChild(3).GetChild(0).GetChild(1).gameObject.SetActive(true);
         }
+            if(DataSet.key_Haustuere == true) {
+            this.gameObject.transform.GetChild(3).GetChild(1).GetChild(1).gameObject.SetActive(true);
+        }
     }
 
 

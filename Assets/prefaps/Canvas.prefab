@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: 
-  DataSet: {fileID: 0}
+  DataSet: {fileID: 11400000, guid: 66a19805375401646903c9d4692006c5, type: 2}
   Manager: {fileID: 0}
 --- !u!1 &672564987
 GameObject:
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: Arbeitszimmer
-  DataSet: {fileID: 0}
+  DataSet: {fileID: 11400000, guid: 66a19805375401646903c9d4692006c5, type: 2}
   Manager: {fileID: 0}
 --- !u!1 &1915103063
 GameObject:

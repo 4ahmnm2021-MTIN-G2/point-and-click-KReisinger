@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -16,7 +16,7 @@ MonoBehaviour:
   tub: 0
   sofa: 0
   tv: 0
-  peppa: 1
+  peppa: 0
   cabinets: 0
   fridge: 0
   tree: 0
