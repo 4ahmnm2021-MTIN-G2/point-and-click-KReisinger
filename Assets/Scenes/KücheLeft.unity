@@ -939,8 +939,8 @@ MonoBehaviour:
   TaskBarTxt: {fileID: 178099409}
   Menu: {fileID: 0}
   _basket: 0
-  _con1: 0
-  _con2: 0
+  _docSchrank: 0
+  _tree: 0
   _key_Arbeitszimmer: 0
   _key_Haustuere: 0
 --- !u!4 &1247539057
@@ -1230,7 +1230,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "Du hast den Key f\xFCr die Haust\xFCre gefunden"
+          m_StringArgument: "Du hast den Schl\xFCssel f\xFCr die Haust\xFCre gefunden"
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -1258,6 +1258,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1247539056}
+        m_MethodName: SetNotification
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Jetzt kannst du drau\xDFen nachsehen"
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
