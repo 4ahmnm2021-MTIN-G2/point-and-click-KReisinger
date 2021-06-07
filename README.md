@@ -1,27 +1,21 @@
 ### Project description:
-
+The journey of Schorsch trying to find Sausia.
 
 ### Development platform:
 + Windows 10
 + Unity 2019.1.14f1
 
 ### Target platform:
+WebGl Build 960 x 600
 
 ### Necessary setup/execution steps:
+Set Unity Game Resolution to 960x600
+
 
 ### Visuals:
-None
+none
 
 ### Third party material:
+none
 
-### Project state:
-
-### Limitations:
-
-### Lessons Learned:
-
-### External Help
-+ [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-+ [Editor](https://jbt.github.io/markdown-editor/)
-
-Copyright by you
+Copyright by Kilian Reisinger
