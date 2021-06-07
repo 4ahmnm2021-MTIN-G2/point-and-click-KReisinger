@@ -1008,6 +1008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1185016576}
   cam: {fileID: 297576278}
+  lep: 0
 --- !u!212 &1185016574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1064,7 +1065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185016572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1019, y: -3.15, z: -9.7712}
+  m_LocalPosition: {x: 3.51, y: -3.15, z: -9.7712}
   m_LocalScale: {x: 0.626448, y: 0.626448, z: 0.626448}
   m_Children: []
   m_Father: {fileID: 0}

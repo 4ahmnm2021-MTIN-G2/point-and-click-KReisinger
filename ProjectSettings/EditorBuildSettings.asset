@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Draussen.unity
     guid: 026d682fb67010c4992cf4566e53c0bf
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: dd7dfc3e0fa006d4a9ad0cabad1f3487
   m_configObjects: {}

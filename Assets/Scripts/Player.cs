@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
-
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -69,5 +69,13 @@ public class Player : MonoBehaviour
         pos = this.gameObject.transform.position;
         newpos = new Vector3(pos.x, pos.y + 01.3f, pos.z);
         goal = newpos;
+        StartCoroutine(DelayMenuLoad());
+    }
+    
+    
+    IEnumerator DelayMenuLoad()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 }

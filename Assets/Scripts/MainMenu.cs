@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public data DataSet;
+
+    void Start() {
+        DataSet.basket = false;
+        DataSet.tub = false;
+        DataSet.sofa = false;
+        DataSet.tv = false;
+        DataSet.peppa = false;
+        DataSet.cabinets = false;
+        DataSet.fridge = false;
+        DataSet.tree = false;
+        DataSet.key_Arbeitszimmer = false;
+        DataSet.key_Haustuere = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void StatGame() {
         SceneManager.LoadScene("Main", LoadSceneMode.Single);
