@@ -1287,6 +1287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1185016576}
   cam: {fileID: 297576278}
+  lep: 0
 --- !u!212 &1185016574
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -20,12 +20,10 @@ public class Player : MonoBehaviour
 
     private Vector3 newpos;
 
-    private float t; 
 
     public float lep;
 
-    private bool hb = true;
-    private bool ht = false;
+
 
     private Vector3 goal;
     void Start() {
@@ -35,10 +33,8 @@ public class Player : MonoBehaviour
     {
         if(movenabled == false) {
             if(true) {
-                lep += Time.deltaTime / 0.3f;
+                lep += Time.deltaTime / 0.25f;
                 if(lep > 1) {
-                    ht = true; 
-                    hb = false;
                     if(goal == newpos) {
                         goal = pos;
                     } else {
@@ -48,12 +44,7 @@ public class Player : MonoBehaviour
                 }
 
             }
-   
-            Debug.Log(lep);
             this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position , goal, lep);
-            
-
-
         }
         if (Input.GetMouseButtonDown(0))  {
        
@@ -71,16 +62,12 @@ public class Player : MonoBehaviour
             agent.enabled = false;
             movenabled = false;
             WinScene();
-        } else {
-            // agent.enabled = true;
-            // movenabled = true;
-        }
+        } 
     }
 
     public void WinScene() {
         pos = this.gameObject.transform.position;
-        newpos = new Vector3(pos.x, pos.y + 01.5f, pos.z);
+        newpos = new Vector3(pos.x, pos.y + 01.3f, pos.z);
         goal = newpos;
-    
     }
 }

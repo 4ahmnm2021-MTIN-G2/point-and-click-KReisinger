@@ -16,12 +16,12 @@ MonoBehaviour:
   tub: 0
   sofa: 0
   tv: 0
-  peppa: 0
+  peppa: 1
   cabinets: 0
   fridge: 0
-  tree: 0
-  key_Arbeitszimmer: 0
-  key_Haustuere: 0
+  tree: 1
+  key_Arbeitszimmer: 1
+  key_Haustuere: 1
   _basket: Sausia scheint nicht im Spielzeugkorb zu sein
   _tub: Hmm auch hier ist er nicht
   _sofa: "Du hast einen Schl\xFCssel f\xFCr das Arbeitszimmer gefunden"
