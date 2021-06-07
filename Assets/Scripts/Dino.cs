@@ -35,7 +35,7 @@ public class Dino : MonoBehaviour
         }
 
         if(DataSet.tree == true && DataSet.peppa == true) {
-            manager.SetNotification("Du hast Sausia entlich gefunden");
+            manager.SetNotification("Du hast Sausia endlich gefunden!");
             var Schorsch =  GameObject.Find("schorsch");
             Schorsch.transform.GetComponent<Player>().ToggleMovement();
             Sausia.transform.parent = Schorsch.transform;
