@@ -1089,6 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1185016576}
   cam: {fileID: 297576278}
+  lep: 0
 --- !u!212 &1185016574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1206,8 +1207,8 @@ MonoBehaviour:
   TaskBarTxt: {fileID: 178099409}
   Menu: {fileID: 0}
   _basket: 0
-  _con1: 0
-  _con2: 0
+  _docSchrank: 0
+  _tree: 0
   _key_Arbeitszimmer: 0
   _key_Haustuere: 0
 --- !u!4 &1247539057
@@ -1471,7 +1472,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Leider nur das restlichen Essen
+          m_StringArgument: Leider nur das restliche Essen von gestern
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,

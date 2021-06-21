@@ -1542,6 +1542,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5604923110723444404, guid: 7a37e815283a3414ba21d736cfcdc8fb,
+        type: 3}
+      propertyPath: m_Text
+      value: "Versuche Sausia zu finden. Du kannst auf Objekte clicken f\xFCr mehr
+        Informationen"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604923110723444404, guid: 7a37e815283a3414ba21d736cfcdc8fb,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 5604923112440676801, guid: 7a37e815283a3414ba21d736cfcdc8fb,
         type: 3}
       propertyPath: m_LocalPosition.x
