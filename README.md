@@ -5,7 +5,7 @@ The journey of Schorsch trying to find Sausia.
 ## Host Link:
 [https://4ahmnm2021-mtin-g2.github.io/point-and-click-KReisinger/](https://4ahmnm2021-mtin-g2.github.io/point-and-click-KReisinger/)
 
-&nbsp;
+---
 &nbsp;
 &nbsp;
 
